@@ -1,38 +1,180 @@
-
 <!DOCTYPE html>
-<html lang=“en">
-<head>
-         <meta charset="UTF-8">
-          <title>四季物语社Lolita</title>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
-     body {
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
 
-            text-align: center;
-            background: url("yell.jpg");
-             background-size: cover;
-            background-position: center;
-            color: black;
-            font-family: arial;<a href="https://wwq2000618.github.io/index.html";>
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("timg.jpg");
+  min-height: 75%;
+}
 
-        }
-p { font-size: 24px; }
-img {
- height: 756px;
-width: 756px;
+.menu {
+  display: none;
 }
 </style>
+<body>
 
-
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3black">Homework1</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">Homework2</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">Homework3</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">Homework4</a>
+    </div>
+  </div>
 </div>
-<body>   
-<img src="all.jpg">
-<p>大家好，欢迎来到四季物语社lolita！<p>
-<a href="https://wwq2000618.github.io/w1.html">homework2</a>      
-<a href="https://wwq2000618.github.io/w2.html">homework3</a> 
-<a href="https://wwq2000618.github.io/h3.html">homework4</a> 
-<a href="https:/wwq2000618.github.io/work2.html">homework5</a>
 
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="Homework1">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Welcome to my little dhop</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:150px">The four seasons<br>Cake</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Only good quality</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAKE</span></h5>
+    <p>Cake is a form of sweet food made from flour, sugar, and other ingredients, that is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate, and that share features with other desserts such as pastries, meringues, custards, and pies.</p>
+    <p>The most commonly used cake ingredients include flour, sugar, eggs, butter or oil or margarine, a liquid, and leavening agents, such as baking soda or baking powder. Common additional ingredients and flavourings include dried, candied, or fresh fruit, nuts, cocoa, and extracts such as vanilla, with numerous substitutions for the primary ingredients. Cakes can also be filled with fruit preserves, nuts or dessert sauces (like pastry cream), iced with buttercream or other icings, and decorated with marzipan, piped borders, or candied fruit.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>As a foodie. Snack not because you're hungry but because your mouth is lonely.</i></p>
+      <p>Life is like a box of chocolates, you never know what you are gonna get.</p>
+   
 </div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bread Basket</h5>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h5>Doughnut</h5>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 3.00</p><br>
+    
+      <h5>Belgian Waffle</h5>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h5>Scrambled eggs</h5>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+      <h5>Blueberry Pancakes</h5>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">INTRODUCE</span></h5>
+    <p>Let me introduce the cake to you</p>
+    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+    <html>
+<body>
+
+<h2>cake</h2>
+<p>Click on the milk, the cake1, or the cake2 to go to a new page and read more about the topic: </p>
+
+<img src="true.jpg" alt="True" usemap="#truemap" >
+
+<map name="truemap">
+ 
+ <area shape="circle" coords="150,130,142" alt="Cake1" href="cake1.html">
+  <area shape="circle" coords="487,134,142" alt="Cake2" href="cake2.html">
+ <area shape="circle" coords="140,491,142" alt="Cake1" href="cake3.html">
+ <area shape="circle" coords="513,480,142" alt="Cake1" href="cake4.html">
+</map>
 
 </body>
 </html>
+   
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+
